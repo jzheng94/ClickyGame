@@ -1,33 +1,58 @@
-.App {
-  text-align: center;
+.imageContainer{
+  display: grid;
+  padding-top: 0;
+  grid-column-gap: 125px;
+  margin-left: 5%;
+  margin-top: 5%;
+  grid-template-columns: repeat(5, 100px);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.puppers{
+  background: white;
+  margin: auto;
+  margin-top: 5%;
+  max-width: 100px;
+  padding: 25px 50px;
+  grid-column: span 1;
+  transition: all 0.2s cubic-bezier(0.25, 0.82, 0.165, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.puppers:hover {
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid lightgoldenrodyellow;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.pupperBoard{
+  background-color: lavenderblush;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: 40%;
+  padding-bottom: 1rem;
+}
+
+.instructions{
+  display: inline-block;
+  margin-left: 25%;
+  padding-bottom: 1.5rem;
+}
+
+.status{
+  display:inline-block;
+  margin-left:25%;
+  padding-bottom: 1.5rem;
+}
+
+.scores{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.score{
+  font-size: 1.5rem;
 }
